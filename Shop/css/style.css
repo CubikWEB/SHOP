@@ -1,0 +1,547 @@
+:root{
+    --main-color:rgb(15, 136, 192) ;
+}
+
+body{
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    background-color: white;
+    color: white;
+    z-index: 3;
+}
+
+header .mainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 64px;
+    color: white;
+    
+}
+
+header .mainer .logo{
+    width: 25%;
+    height: 100%;
+    color: rgb(15, 136, 192);
+    font-family: 'Long Cang', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Long+Cang&display=swap');
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 3);
+}
+
+header .mainer .logo a:hover{
+    cursor: pointer;
+}
+
+header .mainer .menu{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+header .mainer .menu a{
+    height: 100%;
+    font-size: 32px;
+    font-style: italic;
+    color: var(--main-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.5s ease-out; 
+}
+
+header .mainer .menu a:hover{
+    cursor: pointer;
+    color: violet;
+}
+
+header .mainer .log{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+   
+}
+
+header .mainer .log a .counttovar{
+    
+    top: 8%;
+    right: 4.5%;
+    color: black;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(184, 40, 40);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .openmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--main-color);
+    width: 100%;
+    border-top:var(--main-color) 1px solid;
+    border-bottom:var(--main-color)  1px solid;
+}
+
+header .openmenu a{
+    font-size: 24px;
+    font-style: italic;
+    transition: color 0.5s ease-out;
+}
+
+header .openmenu a:hover{
+    color: violet;
+    cursor: pointer;
+}
+
+header .openmenu form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .openmenu form button{
+    color: white;
+    border: white 1px solid;
+    background-color: var(--main-color);
+    opacity: 0.5;
+    width: 100%;
+    height: 48px;
+    font-style: italic;
+    transition: opacity 0.2s ease-in-out;
+    transition: background-color 0.2s ease-out;
+}
+
+header .openmenu form button:hover{
+    opacity: 1;
+    background-color: violet;
+}
+
+.forma{
+    position: fixed;
+    color: white;
+    background-color: black;
+    border-radius: 15%;
+    left: 35%;
+    top: 40%;
+    width: 30%;
+    height: 30%;
+    z-index: 3;
+}
+
+.forma form.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.forma form.login .login{
+    position: relative;
+    top: 10%;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.forma form.login .login .label, .input{
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+
+.forma form.login .login .label{
+    font-size: 24px;
+}
+.forma form.login .login .input input{
+    font-style: italic;
+    height: 24px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.forma form.login .button{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forma form.login .button button{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10%;
+    height: 48px;
+    width: 256px;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.forma form.login .button a{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+main{
+    position: relative;
+    top:64px;
+    position: relative;
+    color: black;
+    min-height: 956px;
+}
+
+main .listtovar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+main .listtovar .list{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-right: var(--main-color) 3px solid;
+    border-bottom: var(--main-color) 3px solid;
+    padding: 5px;
+    color: var(--main-color);
+    font-size: 18px;
+}
+main .listtovar .list a{
+    color: var(--main-color);
+    font-size: 18px;
+    margin-top: 20px;
+    border-bottom: var(--main-color) 3px solid;
+}
+main .listtovar .list a:hover{
+    cursor: pointer;
+}
+main .listtovar .info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .listtovar .info .tovar{
+    display: flex;
+    margin: 20px;
+    width: 97%;
+    height: 512px;
+    border-bottom: var(--main-color) 3px solid;
+}
+
+main .listtovar .info .tovar .photo{
+    height: 512px;
+    width: 512px;
+}
+main .listtovar .info .tovar .infotovar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 472px;
+}
+main .listtovar .info .tovar .infotovar .name{
+    color: var(--main-color);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 64px;
+    width: 256px;
+    border-bottom: var(--main-color) 2px solid;
+}
+main .listtovar .info .tovar .infotovar .cost{
+    color: var(--main-color);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 48px;
+    width: 256px;
+    border-bottom: var(--main-color) 2px solid;
+}
+main .listtovar .info .tovar .infotovar .description{
+    color: var(--main-color);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    width: 512px;
+    height: 256px;
+    border: var(--main-color) 3px solid;
+    margin-bottom: 20px;
+}
+main .listtovar .info .tovar .infotovar  form button{
+    color: white;
+    background-color: var(--main-color);
+    opacity: 0.5;
+    width: 100%;
+    height: 48px;
+    font-style: italic;
+}
+
+main .tovarinbasket{
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: var(--main-color) 2px solid;
+}
+
+
+main .tovarinbasket .info{
+    font-size: 24px;
+    font-style: italic;
+    color:  var(--main-color);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+main .tovarinbasket .info .name , .cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--main-color) 2px solid;
+}
+
+main .tovarinbasket button{
+    width: auto;
+    height: 80px;
+    color: white;
+    border: white 1px solid;
+    background-color: var(--main-color);
+    opacity: 0.5;
+    font-style: italic;
+}
+
+main .register{
+    position: relative;
+    top: 64px;
+    width: 100%;
+    height: 456px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: var(--main-color) 2px solid;
+}
+
+main .register form{
+    width: 356px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+main .register form label{
+    border-bottom: var(--main-color) 2px solid;
+}
+
+main .register form label , input , button{
+    font-style: italic;
+    font-size: 18px;
+    color: var(--main-color);
+}
+main .register form  input{
+    height: 30px;
+    color: var(--main-color);
+    border: none;
+    border-bottom: var(--main-color) 2px solid;
+    background-color: white;
+    opacity: 0.5;
+    font-style: italic;
+}
+main .register form  input::placeholder{
+    color: rgb(95, 161, 192);
+    font-style: italic;
+}
+main .register form  button{
+    width: 100%;
+    height: 30px;
+    color: white;
+    border: white 1px solid;
+    background-color: var(--main-color);
+    opacity: 0.5;
+    font-style: italic;
+}
+
+
+main .tabs{
+    position: relative;
+    top: 32px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+main .tabs *,
+main .tabs *::before,
+main .tabs *::after {
+      box-sizing: border-box;
+}
+
+main .tabs input[type = 'radio']{
+    display: none;
+}
+main .tabs label{
+    background-color: rgb(236, 236, 236);
+    position: relative;
+    margin-left: 20.5%;
+    margin-bottom: 0px;
+    display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      background-color: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      padding: 2px 8px;
+      font-size: 16px;
+      line-height: 1.5;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      top: 1px;
+      z-index: 2;
+}
+
+main .tabs input[type = 'radio']:checked+label{
+    background-color: white;
+    border-bottom: 1px solid #fff;
+}
+
+
+main .tabs .content{
+    margin-top: 0px;
+    position: relative;
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 748px;
+    background-color: white;
+    border: 1px solid  rgb(236, 236, 236);
+    padding: 10px;
+    display: none;
+    color: var(--main-color);
+}
+
+#tab-1:checked~#content-1,
+#tab-2:checked~#content-2,
+#tab-3:checked~#content-3{
+    display: block;
+}
+
+main .tabs .content .timer .move{
+    position: relative;
+    color: var(--main-color);
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main .tabs .content .timer .minute{
+    position: relative;
+    top: 8px;
+    overflow: hidden;
+    width: auto;
+    height: 55px;
+}
+
+main .tabs .content .timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 48px;
+}
+
+main .tabs .content .timer #hour{
+
+    animation: addhour 43200s steps(12,end) infinite;
+}
+main .tabs .content .timer #minute{
+    animation: addminute 3600s steps(60,end) infinite;
+}
+main .tabs .content .timer #secound{
+    animation: addminute 60s steps(60,end) infinite;
+}
+
+@keyframes addhour{
+    to{
+        transform: translateY(-660px);
+    }
+}
+@keyframes addminute{
+    to{
+        transform: translateY(-3300px);
+    }
+}
+
+
+footer{
+    position: relative;
+    top: 64px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    height: 64px;
+    background-color: black;
+}

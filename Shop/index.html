@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Shops
+    </title>
+    <link rel="stylesheet" href="/css/Style.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+           <a onclick="MoveTo('logo')">My Shop</a> 
+        </div>
+        <div class="menu">
+            <a href="#" class="link">Главная</a>
+            <a href="#" class="link">Каталоги</a>
+            <a href="#" class="link">Информация</a>
+            <a onclick="MoveTo('footer')" class="link">Обратная связь</a>
+        </div>
+        <div class="log" id='log'>
+         Войти
+        </div>
+    </header>
+    <menu>
+        1
+    </menu>
+    <div class="forma" id="forma" style="visibility: hidden;">
+        <form action="" class="login" method="POST">
+            <div class="login">
+                <div class="label">
+                    <label for="login">Логин:</label>               
+                    <label for="password">Пароль:</label>
+                </div>
+                <div class="input">
+                    <input type="text" name='login' class='log'>
+                    <input type="password" name='password' class='log'>
+                </div>
+            </div>
+            <div class="button">
+                <button>Войти</button>
+                <a href="#">Регистрация?</a>
+            </div>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+    <main>
+      
+
+    </main>
+    <footer id = 'footer'>
+Наш телефон:+7-906-186-49-94
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
